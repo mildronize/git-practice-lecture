@@ -1,5 +1,11 @@
 #include<stdio.h>
 
+int multiply(int a, int b){
+	return a*b;
+}
+int divide(int a, int b){
+	return a/b;
+}
 int main(){
     int a,b,op;
     int result=0;
@@ -20,4 +26,7 @@ int main(){
     }
     printf("The output is %d", result);
     return 0;
+
 }
+
+
