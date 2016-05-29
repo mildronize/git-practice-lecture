@@ -13,11 +13,11 @@ int divide(int a, int b){
 	return a/b;
 }
 int main(){
-    int a,b,op;
-    int result=0;
+    int a,b;
+    char op;
+    int result = 0;
     printf("Enter an expression: ");
-    scanf("%d%c%d", &a, &b, &op);
-
+    scanf("%d %c %d", &a, &op, &b);
     if(op == '+')
         result = plus(a,b);
     else if(op == '-')
@@ -30,7 +30,7 @@ int main(){
         printf("Error");
         return 1;
     }
-    printf("The output is %d", result);
+    printf("The output is %d\n", result);
     return 0;
 
 }
